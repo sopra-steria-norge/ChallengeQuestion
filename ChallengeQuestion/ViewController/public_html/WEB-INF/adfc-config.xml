@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <managed-bean id="__1">
+    <managed-bean-name>loginBean</managed-bean-name>
+    <managed-bean-class>no.steria.tad.cq.view.LoginBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+    <managed-property id="__2">
+      <property-name>activeDomainController</property-name>
+      <value>tadad.tad.ad</value>
+    </managed-property>
+    <managed-property id="__3">
+      <property-name>systemUser</property-name>
+      <value>xelsysadm</value>
+    </managed-property>
+    <managed-property id="__4">
+      <property-name>systemPassword</property-name>
+      <value>Steria2012</value>
+    </managed-property>
+    <managed-property id="__5">
+      <property-name>activeDomain</property-name>
+      <value>tad.ad</value>
+    </managed-property>
+    <managed-property id="__6">
+      <property-name>oracleIdentityManagerServer</property-name>
+      <value>192.168.137.100</value>
+    </managed-property>
+    <managed-property id="__7">
+      <property-name>useLDAPS</property-name>
+      <value>false</value>
+    </managed-property>
+    <managed-property id="__8">
+      <property-name>questionField</property-name>
+      <value>tad_pquestion</value>
+    </managed-property>
+    <managed-property id="__9">
+      <property-name>answerField</property-name>
+      <value>tad_panswer</value>
+    </managed-property>
+  </managed-bean>
+</adfc-config>

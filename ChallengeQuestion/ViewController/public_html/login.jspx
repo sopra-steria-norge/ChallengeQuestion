@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="login" id="d1">
+            <af:form id="f1" defaultCommand="cb1">
+                <af:panelFormLayout id="pfl1">
+                    <f:facet name="footer"/>
+                    <p>
+
+                        &#160;
+                    </p>
+                    <TABLE border="0">
+                        <TBODY>
+                            <TR>
+                                <TD align="left">
+                                    <H2 align="left">
+                                        Lkdrift administrasjon personlig spørsmål/svar
+                                    </H2></TD>
+                            </TR>
+                        </TBODY></TABLE>
+                    <p>
+
+                        &#160;
+                    </p>
+                    <p>
+                        <af:inputText label="Brukerident" id="it1" value="#{loginBean.username}">
+                            <p>
+
+                                &#160;
+                            </p>
+                            <p>
+
+                                &#160;
+                            </p>
+                        </af:inputText><af:inputText label="Passord" id="it2" value="#{loginBean.password}"
+                                                     secret="true"/><af:inputText label="Personlig spørsmål" id="it3"
+                                                                                  value="#{loginBean.question}"
+                                                                                  secret="false"/><af:inputText label="Personlig svar"
+                                                                                                               id="it4"
+                                                                                                               value="#{loginBean.answer}"
+                                                                                                               secret="false"/>
+                    </p>
+                    <af:commandButton text="Bekreft" id="cb1" action="#{loginBean.doLogin}"/>
+                    <TABLE border="0">
+                        <TBODY>
+                            <TR>
+                                <TD>Mitt personlige spørsmål og svar bør være noe selv man husker godt og som ikke alle
+                                    andre vet.
+                                    <BR>
+                                        <BR/>
+                                    </BR></TD>
+                            </TR>
+                            <TR>
+                                <TD>
+                                    <TABLE border="0">
+                                        <TBODY>
+                                            <TR>
+                                                <TD>Eksempler:</TD>
+                                            </TR>
+                                            <TR>
+                                                <TH align="LEFT">
+                                                    Personlig spørsmål:
+                                                </TH>
+                                                <TD width="50">&#xA0;</TD>
+                                                <TH align="LEFT">
+                                                    Personlig svar:
+                                                </TH>
+                                            </TR>
+                                            <TR>
+                                                <TD>Hva het min første hund ?</TD>
+                                                <TD width="50">&#xA0;</TD>
+                                                <TD align="LEFT">Passopp</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>Hvilken farge hadde min første bil ?</TD>
+                                                <TD width="50">&#xA0;</TD>
+                                                <TD align="LEFT">Blå</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>Hvem har skrevet min favorittbok ?</TD>
+                                                <TD width="50">&#xA0;</TD>
+                                                <TD align="LEFT">Gunnar Stålesen</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>Hvilket instrument spilte jeg i skolekorpset ?</TD>
+                                                <TD width="50">&#xA0;</TD>
+                                                <TD align="LEFT">Baryton</TD>
+                                            </TR>
+                                        </TBODY></TABLE></TD>
+                            </TR>
+                        </TBODY></TABLE>
+                    <p>
+                        &#xA0;
+                    </p>
+                </af:panelFormLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
